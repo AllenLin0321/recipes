@@ -1,7 +1,17 @@
 ﻿import React from "react";
 
 const Footer = () => {
-    return <div>Footer</div>;
+    return (
+        <footer className="page-footer">
+            <p>
+                &copy; {new Date().getFullYear()} <span>SimplyRecipes</span>{" "}
+                Butil with{" "}
+                <a href="https://www.gatsbyjs.com/" target="_blank">
+                    Allen Lin
+                </a>
+            </p>
+        </footer>
+    );
 };
 
 export default Footer;
