@@ -6,7 +6,11 @@ const Footer = () => {
             <p>
                 &copy; {new Date().getFullYear()} <span>SimplyRecipes</span>{" "}
                 Butil with{" "}
-                <a href="https://www.gatsbyjs.com/" target="_blank">
+                <a
+                    href="https://www.gatsbyjs.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     Allen Lin
                 </a>
             </p>
