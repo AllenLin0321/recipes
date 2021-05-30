@@ -9,12 +9,12 @@ const navBars = [
     to: '/',
   },
   {
-    name: 'Tags',
-    to: '/tags',
-  },
-  {
     name: 'Recipes',
     to: '/recipes',
+  },
+  {
+    name: 'Tags',
+    to: '/tags',
   },
   {
     name: 'About',
