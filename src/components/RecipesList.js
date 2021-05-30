@@ -10,11 +10,7 @@ const RecipesList = ({ recipes = [] }) => {
         const pathToImage = getImage(image);
         return (
           <Link to={`/${title}`} className="recipe" key={id}>
-            <GatsbyImage
-              image={pathToImage}
-              className="recipe-img"
-              alt={title}
-            />
+            <GatsbyImage image={pathToImage} className="recipe-img" alt={title} />
             <h5>{title}</h5>
             <p>
               Prep : {prepTime}min | Cook : {cookTime}min
