@@ -1,34 +1,34 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
 module.exports = {
   siteMetadata: {
-    title: "Simply Recipes",
-    description: "Nice and clean recipes site",
-    author: "@allen",
+    title: 'Simply Recipes',
+    description: 'Nice and clean recipes site',
+    author: '@allen',
     person: {
-      name: "allen",
+      name: 'allen',
       age: 18,
     },
-    simpleData: ["item 1", "item 2"],
+    simpleData: ['item 1', 'item 2'],
     complexData: [
       {
-        name: "allen",
+        name: 'allen',
         age: 18,
       },
       {
-        name: "alen",
+        name: 'alen',
         age: 19,
       },
       {
-        name: "elan",
+        name: 'elan',
         age: 20,
       },
     ],
   },
   plugins: [
-    "gatsby-plugin-sass",
+    'gatsby-plugin-sass',
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
@@ -45,6 +45,23 @@ module.exports = {
         spaceId: `oqg5dyj5duab`,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: 'Montserrat',
+              variants: ['400'],
+            },
+            {
+              family: 'Inconsolata',
+              variants: ['400', '500', '600', '700'],
+            },
+          ],
+        },
       },
     },
   ],
