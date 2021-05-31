@@ -2,12 +2,14 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import AllRecipes from '../components/AllRecipes';
+import SEO from '../components/SEO';
 
 const coverImage = '../assets/images/main.jpeg';
 
 const IndexPage = () => {
   return (
     <Layout>
+      <SEO title="Home" />
       <main className="page">
         <header className="hero">
           <StaticImage src={coverImage} alt="eggs" className="hero-img" placeholder="tracedSVG" layout="fullWidth" />
